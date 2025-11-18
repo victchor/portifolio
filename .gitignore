@@ -1,0 +1,22 @@
+# Dependencies (Gerada pelo NPM)
+/node_modules
+
+# Build/Output Files (Gerada pelo Sass)
+/dist
+
+# Configuration and Lock Files (Opcional, mas recomendado)
+# O Git rastreia o package.json, mas o lock file é frequentemente ignorado 
+# ou gerenciado de forma específica dependendo da equipe. Para um projeto 
+# pessoal simples, é comum ignorar, mas rastrear não é problema.
+# Vou manter o padrão para Node.js.
+
+# Ignore logs
+npm-debug.log*
+yarn-error.log*
+.npm
+
+# Editor/OS Specific Files (VS Code)
+.vscode/
+
+# Ignore files that hold local environment configuration
+.env
