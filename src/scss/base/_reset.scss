@@ -1,0 +1,68 @@
+/* ==========================================================================
+   1. BOX SIZING (Herda border-box globalmente)
+   ========================================================================== */
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+/* ==========================================================================
+   2. RESET DE MARGENS E PADDINGS
+   ========================================================================== */
+h1, h2, h3, h4, h5, h6,
+p,
+blockquote,
+pre,
+a,
+ul, ol, li,
+figure, figcaption,
+hr,
+fieldset,
+legend,
+dl, dt, dd {
+  margin: 0;
+  padding: 0;
+}
+
+/* ==========================================================================
+   3. RESET ESPECÍFICO DE ELEMENTOS
+   ========================================================================== */
+
+/* Remove os estilos de lista padrão (bolinhas) */
+ul, ol {
+  list-style: none;
+}
+
+/* Remove a decoração de texto padrão de links (sublinhado) */
+a {
+  text-decoration: none;
+  color: inherit; /* Faz o link herdar a cor do elemento pai */
+}
+
+/* Imagens responsivas e fáceis de estilizar */
+img {
+  max-width: 100%; /* Garante que a imagem nunca ultrapasse o container */
+  display: block; /* Remove o espaço extra padrão abaixo da imagem */
+}
+
+/* Garante que botões e inputs herdem a fonte do body */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove a cor de fundo cinza dos botões no mobile */
+button {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
