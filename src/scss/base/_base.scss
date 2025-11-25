@@ -35,5 +35,9 @@ h1 {
 
 
 .ocult {
-    opacity: 0;
+  opacity: 0;
+}
+
+.title {
+  @include typography.titleFont;
 }

@@ -12,3 +12,11 @@
   font-weight: 400;
   color: $text-color-primary;
 }
+
+@mixin titleFont {
+  color: $text-color-primary;
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  text-align: center;
+}
