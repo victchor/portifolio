@@ -16,32 +16,38 @@
                 <h1 id="typed2" class="header__info-subtitle"></h1>
                 <p id="typed3" class="header__info-text"></p>
                 <div class="header__actions">
-                    <button class="btn btn--primary btn--icon">
-                        <span class="btn__icon">
-                            <img src="./src/assets/icons/download.svg" alt="Currículo">
-                        </span>
-                        <span class="btn__text">Currículo</span>
-                    </button>
-                    <button class="btn btn--primary btn--icon">
-                        <span class="btn__icon">
-                            <img src="./src/assets/icons/linkedin.svg" alt="LinkedIn">
-                        </span>
-                        <span class="btn__text">Linkedin</span>
-                    </button>
+
+                    <div class="ocult">
+                        <button class="btn btn--primary btn--icon">
+                            <span class="btn__icon">
+                                <img src="./src/assets/icons/download.svg" alt="Currículo">
+                            </span>
+                            <span class="btn__text">Currículo</span>
+                        </button>
+                    </div>
+
+                    <div class="ocult">
+                        <button class="btn btn--primary btn--icon">
+                            <span class="btn__icon">
+                                <img src="./src/assets/icons/linkedin.svg" alt="LinkedIn">
+                            </span>
+                            <span class="btn__text">Linkedin</span>
+                        </button>
+                    </div>
                 </div>
             </div>
-
-            <div class="header__avatar-wrapper">
+            <div class="header__avatar-wrapper ocult">
                 <img src="src/assets/imgs/default-avatar.webp" alt="Foto de Victor Souza" class="header__avatar">
             </div>
         </div>
 
     </section>
 
-    <!-- Biblioteca Typed.js via CDN -->
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="https://cdn.usal.dev/latest"></script>
 
     <script src="./src/main.js"></script>
+
 </body>
 
 </html>

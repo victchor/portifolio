@@ -13,6 +13,7 @@
     "sass": "^1.72.0"
   },
   "dependencies": {
-    "typed.js": "^2.1.0"
+    "typed.js": "^2.1.0",
+    "usal": "^1.3.1"
   }
 }
