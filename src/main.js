@@ -13,7 +13,7 @@ new Typed('#typed1', {
             onComplete: function () {
 
                 new Typed('#typed3', {
-                    strings: ['PHP | Java | SpringBoot | MySQL | PostgreSQL'],
+                    strings: ['PHP | Laravel | Symfony | Java | SpringBoot | MySQL | PostgreSQL'],
                     typeSpeed: 50,
                     showCursor: false,
                     onComplete: function () {
