@@ -1,13 +1,15 @@
 const $ = (selector) => document.querySelector(selector);
 
 new Typed('#typed1', {
-    strings: ['Victor Souza'],
+    // strings: ['Victor Souza'],
+    strings: ['Teste'],
     typeSpeed: 50,
     showCursor: false,
     onComplete: function () {
 
         new Typed('#typed2', {
-            strings: ['Dev Full Stack'],
+            // strings: ['Dev Full Stack'],
+            strings: ['Teste 2'],
             typeSpeed: 50,
             showCursor: false,
             onComplete: function () {
