@@ -3,10 +3,10 @@
 @use 'base/reset';
 @use 'base/typography';
 
-@use 'sections/projects';
 @use 'components/project-card';
 @use 'components/button';
 
 @use 'layout/header';
 @use 'layout/technologies';
 @use 'layout/about';
+@use 'layout/projects';

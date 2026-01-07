@@ -1,15 +1,15 @@
 const $ = (selector) => document.querySelector(selector);
 
 new Typed('#typed1', {
-    // strings: ['Victor Souza'],
-    strings: ['Teste'],
+    strings: ['Victor Souza'],
+    // strings: ['Teste'],
     typeSpeed: 50,
     showCursor: false,
     onComplete: function () {
 
         new Typed('#typed2', {
-            // strings: ['Dev Full Stack'],
-            strings: ['Teste 2'],
+            strings: ['Dev Full Stack'],
+            // strings: ['Teste 2'],--slider-height: 31.25vw;--slider-height: 31.25vw;--slider-height: 31.25vw;--slider-height: 31.25vw;
             typeSpeed: 50,
             showCursor: false,
             onComplete: function () {

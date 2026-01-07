@@ -5,6 +5,11 @@
 @mixin codeFont {
   font-family: "Source Code Pro", monospace;
   font-weight: 600;
+
+  @media (max-width: 760px) {
+    font-size: 30px !important;
+    letter-spacing: 0.1rem;
+  }
 }
 
 @mixin baseFonte {
@@ -19,4 +24,9 @@
   text-transform: uppercase;
   letter-spacing: 0.2rem;
   text-align: center;
+
+  @media (max-width: 760px) {
+    font-size: 0.6rem;
+    letter-spacing: 0.1rem;
+  }
 }

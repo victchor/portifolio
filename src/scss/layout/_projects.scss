@@ -1,0 +1,105 @@
+@use '../base/typography' as *;
+@use '../base/variables' as *;
+
+.projects {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+
+    &__itens {
+        display: grid;
+        width: 90%;
+        max-width: 1100px;
+        gap: 54px;
+        justify-content: center;
+        grid-template-columns: repeat(1, 1fr);
+        padding-bottom: 1rem;
+
+        @media (min-width: 600px) {
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        @media (min-width: 900px) {
+            grid-template-columns: repeat(3, 1fr);
+        }
+
+        @media (min-width: 1200px) {
+            grid-template-columns: repeat(4, 1fr);
+        }
+    }
+}
+
+/* =========================
+   PROJECT CARD (BEM)
+========================= */
+
+.project-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+
+    &__wrapper {
+        position: relative;
+        perspective: 40em;
+        display: grid;
+        transform-style: preserve-3d;
+        width: 250px;
+        height: 160px;
+        cursor: pointer;
+        padding-bottom: 1rem;
+
+        &::before {
+            --bw: 8px;
+            content: '';
+            grid-area: 1 / 1;
+            width: 100%;
+            height: 100%;
+            margin-top: calc(-1 * var(--bw));
+            margin-left: calc(-1 * var(--bw));
+            border: var(--bw) solid #000;
+            box-sizing: content-box;
+            transform: none; /* reto */
+            backface-visibility: hidden;
+            pointer-events: none;
+            transition: .3s transform cubic-bezier(.25, .46, .45, 1);
+        }
+    }
+
+    &__surface {
+        grid-area: 1 / 1;
+        width: 100%;
+        height: 100%;
+        transform: none;
+        backface-visibility: hidden;
+        box-shadow: 0 10px 30px -3px rgba(0, 0, 0, 0.15);
+        transition: .3s transform cubic-bezier(.25, .46, .45, 1);
+        overflow: hidden;
+        background-color: #000;
+    }
+
+    &__img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+    }
+
+    &__title {
+        @include baseFonte;
+        text-transform: uppercase;
+        letter-spacing: 0.08rem;
+        font-size: 0.75rem;
+        opacity: 0.85;
+    }
+
+    /* Hover → efeito 3D */
+    &__wrapper:hover &__surface {
+        transform: translateX(10px) rotateY(25deg) rotateX(10deg);
+    }
+
+    &__wrapper:hover::before {
+        transform: translateX(-40px) rotateY(-30deg) rotateX(15deg) scale(1.03);
+    }
+}

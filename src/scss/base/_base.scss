@@ -18,6 +18,10 @@ body {
       #3a1e70 60%,
       #5333a5 80%,
       #7a5bdb 100%);
+
+  @media (max-width: 760px) {
+    max-width: 100%;
+  }
 }
 
 section {
@@ -25,12 +29,18 @@ section {
   width: 85%;
   max-width: 1200px;
   margin: 1.3rem auto;
+
+  @media (max-width: 760px) {
+    width: 98%;
+    overflow: hidden;
+    padding: 0;
+  }
+
 }
 
 h1 {
   color: $title-highlight-color;
 }
-
 
 .ocult {
   opacity: 0;
