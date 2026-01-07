@@ -9,7 +9,7 @@ new Typed('#typed1', {
 
         new Typed('#typed2', {
             strings: ['Dev Full Stack'],
-            // strings: ['Teste 2'],--slider-height: 31.25vw;--slider-height: 31.25vw;--slider-height: 31.25vw;--slider-height: 31.25vw;
+            // strings: ['Teste 2'],
             typeSpeed: 50,
             showCursor: false,
             onComplete: function () {
